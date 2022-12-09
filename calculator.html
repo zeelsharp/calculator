@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Calculator</title>
+  <!-- calculator needs to be implemented needs to use its own JavaScript file "calculator.js" -->
+  <!-- calculator needs to be implemented in a different html file called "calculator.html" -->
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+  <section>
+  <!--The calculator will have the digit buttons on its keyboard (1,2,3,4,5,6,7,8,9,0) and need to be aligned by groups of 3, starting from the 1.-->
+    <div class="container">
+  <!-- Display shows entire operations (digits and operators) wipe out to show result once = pressed-->
+      <div class="display">
+        <div display-previous-operand id="operator" class="previous-operand"></div>
+        <div display-current-operand id="display" class="current-operand"></div>
+      </div>
+      <div class="all-buttons">
+        <!-- copy button that will copy any information currently on display-->
+        <button id="copy">copy</button>
+        <button id="plus" class="op">+</button>
+        <button id="minus" class="op">-</button>
+        <button class= "data-number">1</button>
+        <button class= "data-number">2</button>
+        <button class= "data-number">3</button>
+        <button class="op">^</button>
+        <button class= "data-number">4</button>
+        <button class= "data-number">5</button>
+        <button class= "data-number">6</button>
+        <button class="op">*</button>
+        <button class= "data-number">7</button>
+        <button class= "data-number">8</button>
+        <button class= "data-number">9</button>
+        <button id="divide" class="op">/</button>
+        <button class= "data-number" id="zero">0</button>
+        <button id="equal">=</button>
+      </div>
+    </div>
+  </section>
+  <script src="calculator.js" defer></script>
+</body>
+</html>
